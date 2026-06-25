@@ -80,7 +80,7 @@ export default function BookingForm() {
           id="bookerEmail" 
           className={styles.input} 
           type="email" 
-          {... register('bookerEmail')}
+          {...register('bookerEmail')}
         />
         {/* + TODO: render <ErrorMessage message={errors.bookerEmail?.message?.toString()} /> */}
         <ErrorMessage message={errors.bookerEmail?.message?.toString()} />
@@ -94,7 +94,7 @@ export default function BookingForm() {
         <input 
           id="eventName" 
           className={styles.input} 
-          {... register('eventName')}
+          {...register('eventName')}
         />
         {/* + TODO: render <ErrorMessage message={errors.eventName?.message?.toString()} /> */}
         <ErrorMessage message={errors.eventName?.message?.toString()} />
@@ -109,7 +109,7 @@ export default function BookingForm() {
           id="eventDate" 
           className={styles.input} 
           type="date" 
-          {... register('eventDate')}
+          {...register('eventDate')}
         />
         {/* + TODO: render <ErrorMessage message={errors.eventDate?.message?.toString()} /> */}
         <ErrorMessage message={errors.eventDate?.message?.toString()} />
@@ -124,7 +124,7 @@ export default function BookingForm() {
           id="numberOfGuests" 
           className={styles.input} 
           type="number" 
-          {... register('numberOfGuests')}
+          {...register('numberOfGuests')}
         />
         <ErrorMessage message={errors.numberOfGuests?.message?.toString()} />
       </div>
@@ -134,7 +134,7 @@ export default function BookingForm() {
           Time Slot
         </label>
         {/* + TODO: register this field with `register('timeSlot')` */}
-        <select id="timeSlot" className={styles.input} {... register('timeSlot')}>
+        <select id="timeSlot" className={styles.input} {...register('timeSlot')}>
           <option value="">Select a time slot</option>
           {timeSlots.map((slot) => (
             <option key={slot} value={slot}>
@@ -157,7 +157,7 @@ export default function BookingForm() {
           id="eventLink" 
           className={styles.input} 
           type="url"
-          {... register('eventLink')}
+          {...register('eventLink')}
         />
         {/* TODO: render <ErrorMessage message={errors.eventLink?.message?.toString()} /> */}
         <ErrorMessage message={errors.eventLink?.message?.toString()} />
