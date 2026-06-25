@@ -65,7 +65,7 @@ export default function BookingForm() {
         <input 
           id="bookerName" 
           className={styles.input} 
-          {... register('bookerName')}
+          {...register('bookerName')}
         />
         {/* + TODO: render <ErrorMessage message={errors.bookerName?.message?.toString()} />*/}
         <ErrorMessage message={errors.bookerName?.message?.toString()} />
